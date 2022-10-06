@@ -9,7 +9,7 @@ var elAlert = document.querySelector(".alert-js");
 elForm.addEventListener("submit" , function(evt){
     evt.preventDefault()
     var elNumber = Number(elInput.value);
-
+    
     if(elNumber % 3 == 0 && elNumber % 5 == 0){
         elAlert.textContent = "FizzBuzz"
     }else if(elNumber % 3 == 0){
@@ -19,7 +19,7 @@ elForm.addEventListener("submit" , function(evt){
     }else{
         elAlert.textContent = elNumber + " Kiritilgan son 3 ga ham 5 ga ham bo'linmaydi"
     }
-
+    
     elInput.value = ""
 })
 
@@ -34,9 +34,9 @@ var elText = document.querySelector(".text-js");
 
 moneyForm.addEventListener("submit" , function(evt){
     evt.preventDefault()
-
+    
     var inputValue = Number(moneyInput.value);
-
+    
     elText.textContent = inputValue * elSelect.value
 })
 
@@ -45,4 +45,5 @@ moneyForm.addEventListener("submit" , function(evt){
 
 
 // 2-Mashq ============================================================================
+
 
